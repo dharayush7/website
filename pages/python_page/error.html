@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+</head>
+
+<body>
+    <h2>Not available!</h2>
+    <p>Python file available soon...</p>
+    <button id="bt">Go back</button>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #bt {
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            border-width: 1px;
+            transition: .1s ease-in-out;
+        }
+
+        #bt:hover {
+            transition: .1s ease-in-out;
+            background-color: #c5c5c5;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        const btn = document.querySelector("#bt");
+        btn.addEventListener('click', () => {
+            document.location.href = "./python.html";
+        });
+    </script>
+
+</body>
+
+</html>

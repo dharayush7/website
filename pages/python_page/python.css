@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.header {
+    margin: auto;
+    padding: 0 40px;
+    height: 62px;
+    width: 100%;
+    display: flex;
+    background-color: #29323c;
+    top: 0;
+}
+
+.pr,
+.brands,
+.ico {
+    width: fit-content;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico>span {
+    margin-right: auto;
+}
+
+.brands>span {
+    margin-left: auto;
+}
+
+.ico img {
+    transition: .3s ease-in-out;
+    filter: brightness(0) invert(1);
+}
+
+.ico img:hover {
+    filter: none;
+    transition: .3s ease-in-out;
+
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.brands h3 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.brands h3 span {
+    font-weight: bold;
+}
+
+
+.pr p {
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: start;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 40px;
+    background-color: #fff;
+    width: 100%;
+    min-height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp {
+    color: crimson;
+    font-weight: 300;
+}
+
+.python {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.pytitle p {
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.card_contener_main {
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.card_contener_child {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_contener_child a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    padding: 30px 20px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12), 2px 4px 6px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    width: 350px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.color1 {
+    background-image: url(./images/bg_images/card_bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.icon {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 100%;
+    justify-content: start;
+}
+
+.card h2 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4rem;
+    font-weight: lighter;
+}
+
+.hover1 {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* End of project Section */
+
+/* Footer section */
+
+#footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer_main {
+    padding: 30px 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+.title h2 span {
+    font-weight: 500;
+}
+
+.title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300px;
+    color: white;
+}
+
+.footer_right .icon {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    transition: 0.3s ease filter;
+}
+
+.filter {
+    filter: brightness(0) invert(1);
+}
+
+.hover2 {
+    transition: 0.3s ease filter;
+    filter: none;
+}
+
+.end p {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.end p span {
+    /* margin-top: 2px; */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.end {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+/* End Footer section */
+
+
+
+/* Tablet Or Landscape Mode Media Quary */
+@media (max-width:1200px) {
+    #projects {
+        padding: 70px 30px;
+    }
+
+    #projects h4 {
+        font-size: 30px;
+    }
+
+    .card_contener_child {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        gap: 5px;
+        width: 175px;
+        height: 155px;
+        padding: 10px;
+
+    }
+
+    .card h2 {
+        font-size: 13px;
+    }
+
+    .card p {
+        width: 165px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .card img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hover1 {
+        transition: 0.2s ease-in-out;
+        transform: scale(.7);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+}
+
+/*  Tablet Or Landscape Mode End Media Quary */
+
+/* Tablet media Quary */
+
+@media (max-width:768px) {
+    #projects {
+        padding: 80px 10px;
+
+    }
+
+    #projects h4 {
+        font-size: 30px;
+    }
+
+    .card_contener_child {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        gap: 5px;
+        width: 175px;
+        height: 155px;
+        padding: 10px;
+
+    }
+
+    .card h2 {
+        font-size: 13px;
+    }
+
+    .card p {
+        width: 165px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .card img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hover1 {
+        transition: 0.2s ease-in-out;
+        transform: scale(1.1);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .pytitle p {
+        font-size: 25px;
+    }
+}
+
+/* Ebd of Tablet media Quary */
+
+/* Mobile Media Quary */
+@media (max-width:560px) {
+    #projects {
+        padding: 80px 30px;
+    }
+
+    #projects h4 {
+        font-size: 30px;
+    }
+
+    .card_contener_main {
+        gap: 20px;
+    }
+
+    .card_contener_child {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #about .about {
+        padding: 60px 20px;
+        flex-direction: column;
+    }
+
+    #about .col-right {
+        padding-top: 45px;
+        padding-left: 0px;
+    }
+
+    .con_card_container {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+/* End Mobile Media Quary */
+
+/* Media quary footer */
+@media (max-width: 425px) {
+    #projects {
+        margin-top: 10px;
+    }
+
+    .footer_main {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    .footer_right .icon a img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer_right .icon {
+        gap: 10px;
+
+    }
+
+    .pytitle p {
+        font-size: 15px;
+    }
+}
+
+/* End Media quary footer */
+
+/* header Media Quary*/
+
+@media (max-width:1050px) {
+
+    .brands h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:650px) {
+    .brands h3 {
+        font-size: 1.2rem;
+    }
+
+    .pr p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:460px) {
+    .brands h3 {
+        font-size: 1rem;
+    }
+
+    .pr p {
+        font-size: 13px;
+    }
+
+    .ico img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width:390px) {
+    .brands h3 {
+        font-size: .7rem;
+    }
+
+    .pr p {
+        font-size: 13px;
+    }
+
+    .ico img {
+        width: 25px;
+        height: 25px;
+    }
+}
