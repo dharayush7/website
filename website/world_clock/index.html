@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./public_html/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="head">
+            <a href="../../index.html"><img src="./images/home-solid.png" alt="home_page" id="home"></a>
+            <h3>Wrold Clock</h3>  
+        </div>
+    </header>
+    <!-- dropdown list -->
+    <div class="list">
+        <h3>Browse Time Zone&nbsp;: </h3>
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">TimeZone</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li>TimeZone</li>
+                <li class="active">Timezone</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- time -->
+    <div class="main">
+        <hr>
+        <div class="titlet">
+            <h4>Current Time is&nbsp;:</h4>
+        </div>
+        <div class="time">
+            <p>00:00:00 PM <span>on</span><br>12th August, 2022 <br>Wednesday</p>
+        </div>
+    </div>
+    
+    <div class="web">
+    <p><a href="../../index.html" target="">Go to</a> home page</p>
+  </div>
+    
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer_main">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo" />
+            </div>
+            <div class="footer_right">
+                <div class="title">
+                    <h2><span class="sp">a</span>yush <span class="sp">d</span>har</h2>
+                    <p>World Clock</p>
+                </div>
+                <div class="icon">
+                    <a href="mailto:service@ayushdhar.com" target="_blank"><img class="img" src="./images/gmail-head.png"
+                            alt="email" /></a>
+                    <a href="https://github.com/dharayush7" target="_blank"><img class="img"
+                            src="./images/github-head.png" alt="github" /></a>
+                    <a href="https://www.instagram.com/dharayush07/" target="_blank"><img class="img"
+                        src="./images/insta.png" alt="insta"></a>
+                    <a href="../../index.html" target=""><img class="img"
+                        src="./images/website-head.png" alt="website" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <p><span>&copy;</span> Depeloped by Ayush Dhar</p>
+        </div>
+    </footer>
+
+
+
+    <script src="luxon.js"></script>
+    <script src="time.js"></script>
+
+</body>
+
+</html>
